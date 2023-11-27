@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marino's Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--INCLUSÃO BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header-img" class="flex"><!--MENU-PARALLAX-->
+        <nav class="flex">
+            <a href=""><iconify-icon icon="fluent-emoji-flat:pizza" width="15"></iconify-icon></a>
+            <a href="">Cardápio</a>
+            <a href="">Sobre Nós</a>
+            <a href="" id="button">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <section id="bout-delivery" class="flex bout"><!--INFO ENTREGA-->
+            <div class="section-icon" id="first-div">
+                <iconify-icon icon="mdi:motorbike" style = "color:#c4c4c4" width="40"></iconify-icon>
+            </div>
+            <div id="second-div">
+                <ul>
+                    <span>
+                    <li><p>Entrega em até 50 minutos!</p></li>
+                        <li><p>A partir de R$6,00</p></li>
+                    </span>
+                    <li><a href="">Selecionar endereço</a></li>
+                </ul>
+            </div>
+            <div class="section-icon">
+                <a href="">
+                    <iconify-icon icon="ic:round-arrow-back-ios" style="color: #c4c4c4;" width="30" rotate="180deg"></iconify-icon>
+                                </div>
+                </a>
+        </section>
+
+        <h2>Promoções</h2> <!--PROMOÇÕES-->
+        <section class="flex" id="promos">
+            <a href="">
+                <section class="promo flex">
+                        <section class="flex text" id="first">
+                            <h3>Toscana</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit minima explicabo.</p>
+                        </section>
+                        <section class="flex">
+                            <span><img src="imgs/pizza-toscana-2.jpg" alt=""></span>
+                        </section>
+                </section>
+            </a>
+
+            <a href="">
+                <section class="promo flex">
+                        <section class="flex text" id="first">
+                            <h3>Frango c/ catupiry</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit minima explicabo.</p>
+                        </section>
+                        <section class="flex">
+                            <span><img src="imgs/pizza-promo1.jpg" alt="" width="120px"></span>
+                        </section>
+                </section>
+            </a>
+            <a href="">
+                <section class="promo flex">
+                    <section class="flex text" id="first">
+                        <h3>Baiana</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit minima explicabo.</p>
+                    </section>
+                    <section class="flex">
+                        <span><img src="imgs/pizza-toscana-2.jpg" alt=""></span>
+                    </section>
+                </section>
+            </a>
+            <a href="">
+                <section class="promo flex">
+                    <section class="flex text" id="first">
+                        <h3>Margherita</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit minima explicabo.</p>
+                    </section>
+                    <section class="flex">
+                        <span><img src="imgs/pizza-toscana-2.jpg" alt=""></span>
+                    </section>
+                </section>
+            </a>
+            <a href="">
+                <section class="promo flex">
+                    <section class="flex text" id="first">
+                        <h3>Margherita</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit minima explicabo.</p>
+                    </section>
+                    <section class="flex">
+                        <span><img src="imgs/pizza-toscana-2.jpg" alt=""></span>
+                    </section>
+                </section>
+            </a>
+        </section>
+
+        <section id="cardapio-img" class="flex"><!--PARALLAX CARDÁPIO-->
+            <h2>Cardápio</h2>
+        </section>
+        <span>
+            <h2>Mais pedidas</h2>
+        </span>
+        <!--BOOTSTRAP CAROUSEL-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <!--INDICADORES DO CAROUSEL-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> <!--FIM INDICADORES-->
+
+            <!--INICIO SLIDE CAROUSEL-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/carousel1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/carousel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/carousel3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div> <!--FIM SLIDE CAROUSEL-->
+
+            <!--INICIO PREVIEW AND NEXT-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <footer>
+        <div class="b">b</div>
+    </footer>
+    <!--INCLUSAO JS DO BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--ICONES DO SITE-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
