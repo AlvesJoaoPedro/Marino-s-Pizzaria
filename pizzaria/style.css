@@ -89,7 +89,7 @@ section a:hover, section a:active{
 }
 h2{
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-family: 'Lora', serif;
 }
 span h2{
@@ -168,4 +168,40 @@ section#cardapio-img h2{
 }
 .b{
     margin-top: 1000px;
+}
+.carrossel{
+    margin-bottom: 4vh;
+}
+section#pizzas{
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 2.6vh;
+}
+section.pizza.flex{
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #dbdada;
+    max-width: 95%;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 1vh;
+}
+section.pizza.flex div.flex span{
+    margin-left: 2vw;
+}
+section.pizza.flex div.flex span.price p{
+    margin-top: 2vw;
+    color: rgb(30, 128, 30);
+}
+section.pizza.flex p{
+    color: #afafaf;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8vh;
+    padding: 0 6px 6px 6px;
+}
+.icon{
+    margin-top: 0.7vh;
+}
+section.pizza.flex div.flex{
+    justify-content: center;
 }
