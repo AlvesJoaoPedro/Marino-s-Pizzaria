@@ -102,49 +102,192 @@
         <section id="cardapio-img" class="flex"><!--PARALLAX CARDÁPIO-->
             <h2>Cardápio</h2>
         </section>
-        <span>
-            <h2>Mais pedidas</h2>
-        </span>
-        <!--BOOTSTRAP CAROUSEL-->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <!--INDICADORES DO CAROUSEL-->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div> <!--FIM INDICADORES-->
-
-            <!--INICIO SLIDE CAROUSEL-->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imgs/carousel1.jpg" class="d-block w-100" alt="...">
+        <section id="cardapio">
+            <span>
+                <h2>Mais pedidas</h2>
+            </span>
+            <!--BOOTSTRAP CAROUSEL-->
+            <div id="carouselExampleIndicators" class="carousel slide carrossel">
+                <!--INDICADORES DO CAROUSEL-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div> <!--FIM INDICADORES-->
+                <!--INICIO SLIDE CAROUSEL-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/carousel1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/carousel2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/carousel3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div> <!--FIM SLIDE CAROUSEL-->
+                <!--INICIO PREVIEW AND NEXT-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-item">
-                <img src="imgs/carousel2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/carousel3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div> <!--FIM SLIDE CAROUSEL-->
-
-            <!--INICIO PREVIEW AND NEXT-->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+              <h2>Outras opções</h2>
+                <section id="pizzas" class="flex">
+                    <section class="pizza flex">
+                            <div class="flex">
+                                    <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                                <span>
+                                    <h5>Calabresa</h5>
+                                </span>
+                                <span class="price">
+                                    <p>R$ 44.90</p>
+                                </span>
+                            </div>
+                            <div class="flex">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                            </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>A moda</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Baiana</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Portuguesa</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Dois Amores</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Carne Sol c/ Cream Cheese</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Lombo Canadense</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Banana c/ Canela</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Califórnia</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                    <section class="pizza flex">
+                        <div class="flex">
+                                <iconify-icon icon="twemoji:pizza" class="icon" width="20"></iconify-icon>
+                            <span>
+                                <h5>Chocolate Branco c/ Morango</h5>
+                            </span>
+                            <span class="price">
+                                <p>R$ 44.90</p>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta voluptatem. In eum reiciendis dolorem. Dignissimos praesentium pariatur.</p>
+                        </div>
+                    </section>
+                </section>
+        </section>
     </main>
     <footer>
-        <div class="b">b</div>
     </footer>
     <!--INCLUSAO JS DO BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!--ICONES DO SITE-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
