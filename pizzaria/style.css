@@ -204,19 +204,26 @@ section.pizza.flex p{
 section.pizza.flex div.flex{
     justify-content: center;
 }
-section#sobre{
-    flex-direction: row;
-    flex-wrap: wrap;
+section#sobre.flex{
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
 }
-section#sobre.flex section{
-    width: 45%;
-}
-section#sobre.flex img{
+section.sobre-itens.flex{
     width: 90%;
-    border: 1px solid #e8e6e6;
-    border-radius: 4px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section.sobre-itens p{
+    font-size: 1.7vh;
+}
+section#sobre section.sobre-itens img{
+    align-self: center;
+    width: 80%;
+    height: 40%;
+    margin-top: 0;
+    margin-left: 4vh;
 }
 footer{
     margin-top: 3vh;
