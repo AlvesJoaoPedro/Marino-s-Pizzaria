@@ -7,12 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&family=Montserrat:wght@600;700&display=swap');
 
 
-*{
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header{
+    margin-top: 0;
     justify-content: center;
     width: 100%;
     height: 100vh;
@@ -118,6 +119,11 @@ section.promo#last{
 section.promo a:active{
     background-color: #dbdada;
 }
+section.promo a:hover{
+    background-color: #dbdada;
+    transform: scale(1.1);
+    text-decoration: none;
+}
 section.promo p{
     font-size: 1.8vh;
 }
@@ -176,19 +182,26 @@ section#pizzas{
     align-items: center;
     margin-top: 2.6vh;
 }
-section.pizza.flex{
+section.pizza.flex, a.pizza{
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
     border: 1px solid #dbdada;
-    max-width: 95%;
+    max-width: 80%;
     border-radius: 5px;
     padding: 6px;
     margin-bottom: 1vh;
 }
-section.pizza.flex div.flex span{
+a.pizza div{
     margin-left: 2vw;
+    justify-content: center;
+    align-content: center;
 }
-section.pizza.flex div.flex span.price p{
+section#pizzas a:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+    margin-bottom: 6%;
+}
+a.pizza.flex div.flex span.price p{
     margin-top: 2vw;
     color: rgb(30, 128, 30);
 }
