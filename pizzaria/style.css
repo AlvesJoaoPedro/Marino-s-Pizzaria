@@ -217,13 +217,12 @@ section.pizza.flex p{
 section.pizza.flex div.flex{
     justify-content: center;
 }
-section#sobre.flex{
+section#sobre{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
 }
-section.sobre-itens.flex{
+section.sobre-itens{
     width: 90%;
     flex-direction: row;
     justify-content: space-evenly;
@@ -231,12 +230,10 @@ section.sobre-itens.flex{
 section.sobre-itens p{
     font-size: 1.7vh;
 }
-section#sobre section.sobre-itens img{
-    align-self: center;
+section.sobre-itens img{
+    margin-left: 10%;
     width: 80%;
     height: 40%;
-    margin-top: 0;
-    margin-left: 4vh;
 }
 footer{
     margin-top: 3vh;
