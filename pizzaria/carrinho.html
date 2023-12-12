@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Raleway:ital,wght@1,300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&family=Montserrat:wght@600;700&display=swap');
+
+
+        .flex{
+            display: flex;
+        }
+        main.flex{
+            justify-content: center;
+        }
+        /*BOOTSTRAP MENU HAMBURGER*/
+        body {
+            background-color: #fff;
+            margin: 0;
+        }
+        
+        nav {
+            background-color: #2c2b2b;;
+            padding: 10px;
+            text-align: right;
+        }
+
+        nav button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .menu-container {
+            display: none;
+            background-color: #2c2b2b;;
+            padding: 20px;
+            position: absolute;
+            top: 47px;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .menu-container a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+        .menu-container a:hover{
+            animation-name: cor;
+            animation-duration: 0.6s;
+        }
+        @keyframes cor{
+            0% { 
+                background-color: #2c2b2b;
+                color: #fff;}
+            100%{
+                background-color: #fff;
+                color: #2c2b2b;
+            }
+        }
+        .menu-container a#last-one {
+            border: none;
+        }
+        /*BOOTSTRAP CARDAPIO*/
+        .cart-container {
+            width: 90%;
+            margin-top: 1vh;
+            padding: 20px;
+            background-color: #2c2b2b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            text-transform: capitalize;
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cart-item {
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .item-name {
+            color: #f5f1f1;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;;
+        }
+
+        .item-price {
+            color: rgb(30, 128, 30);
+            font-size: 0.9rem;
+        }
+
+        .total-price {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            margin-top: 20px;
+            background-color: #f0bf11;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkout-btn:hover {
+            background-color: #ffc803;
+        }
+        /*FOOTER*/
+        footer{
+    margin-top: 3vh;
+    background: #2c2b2b;
+    flex-direction: column;
+}
+footer section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#redes.flex{
+    width: 42%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer section h5{
+    color: #fff;
+    margin: 2vh;
+}
+section#incorp{
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <button id="menu-toggle" style="color: #fff">&#9776;</button>
+        <div class="menu-container">
+            <a href="index.html">Home</a>
+            <a href="#redes" id="last-one">Social</a>
+        </div>
+    </nav>
+
+    <main class="flex">
+        <div class="cart-container">
+            <h2>Compras</h2>
+            <div class="cart-item">
+                <iconify-icon icon="fluent-emoji-flat:pizza"></iconify-icon>
+                <span class="item-name">Pizza Calabresa</span>
+                <span class="item-price">R$ 49,90</span>
+            </div>
+            <div class="cart-item">
+                <iconify-icon icon="noto-v1:pizza"></iconify-icon>
+                <span class="item-name">Pizza Frango c/ Catupiry</span>
+                <span class="item-price">R$49,90</span>
+            </div>
+            <div class="cart-item">
+                <iconify-icon icon="noto-v1:pizza"></iconify-icon>
+                <span class="item-name">Pizza Peperoni</span>
+                <span class="item-price">R$49,90</span>
+            </div>
+            <div class="cart-item">
+                <iconify-icon icon="noto-v1:pizza"></iconify-icon>
+                <span class="item-name">Pizza Dois Amores</span>
+                <span class="item-price">R$49,90</span>
+            </div>
+            <div class="cart-item">
+                <iconify-icon icon="noto-v1:pizza"></iconify-icon>
+                <span class="item-name">Pizza Baiana</span>
+                <span class="item-price">R$49,90</span>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+            <div class="total-price">Total: R$ R$ 249,50</div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </main>
+    <footer class="flex">
+        <section id="social" class="flex">
+            <h5>Redes Sociais</h5>
+            <div id="redes" class="flex">
+                <a href="#"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="ic:outline-whatsapp" style="color: white;"></iconify-icon></a>
+                <a href=""><iconify-icon icon="ic:baseline-facebook" style="color: white;"></iconify-icon></a>
+            </div>
+        </section>
+        <section></section>
+        <section id="incorp" class="flex">
+            <h5>Endereço</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.78675345436!2d-34.853524424883595!3d-7.15063827014971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc346b56ee0cd%3A0x2cf4c299843db5a8!2sDeu%20Em%20Pizza%20%26%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1701481452889!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </footer>
+    <!-- Bootstrap JavaScript (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Icones -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   
+    <!--ICONES DO SITE-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menuContainer = document.querySelector('.menu-container');
+            menuContainer.style.display = menuContainer.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
