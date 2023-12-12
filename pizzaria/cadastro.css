@@ -1,71 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cadastro.css">
-</head>
-<body>
-    <header id="header-img" class="flex"><!--MENU-PARALLAX-->
-        <nav class="flex">
-            <a href="index.html"><iconify-icon icon="fluent-emoji-flat:pizza" width="15"></iconify-icon></a>
-            <a href="#cardapio-img">Cardápio</a>
-            <a href="">Sobre Nós</a>
-            <a href="" id="button">Entrar</a>
-        </nav>
-    </header>
-    <main class="flex">
-        <section id="cadastro" class="flex">
-            <h1>Acesse sua conta</h1>
-            <p>Não tem uma conta? <a href="cadastro2.html">CRIE UMA</a></p>
-            <form method="post">
-                <p>Nome: <input type="text" name="nome" id="nome"></p>
-                <p>Senha: <input type="password" name="password" id="password"></p>
-                <input type="submit" name="confirmar" id="confirmar" value="Confirmar">
-            </form>
-            <p><span><a href="">Esqueceu sua senha?</a></span></p>
-            <div id="botoes">
-                <a href="#">
-                    <div id="login-face">
-                    <iconify-icon icon="ic:twotone-facebook"></iconify-icon>login com facebook
-                    </div>
-                </a>
-                <a href="#">
-                    <div id="login-google">
-                        <iconify-icon icon="flat-color-icons:google"></iconify-icon></iconify-icon> login com google
-                    </div>
-                </a>
-                <a href="#">
-                    <div id="login-apple">
-                    <iconify-icon icon="ic:baseline-apple" style="color: white;"></iconify-icon> login com apple
-                    </div>
-                </a>
-            </div>
-            <p id="back"><a href="index.html">Voltar</a></p>
-        </section>
-    </main>
-    <footer class="flex">
-        <section id="social" class="flex">
-            <h5>Redes Sociais</h5>
-            <div id="redes" class="flex">
-                <a href="#"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
-                <a href="#"><iconify-icon icon="ic:outline-whatsapp" style="color: white;"></iconify-icon></a>
-                <a href=""><iconify-icon icon="ic:baseline-facebook" style="color: white;"></iconify-icon></a>
-            </div>
-        </section>
-        <section></section>
-        <section id="incorp" class="flex">
-            <h5>Endereço</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.78675345436!2d-34.853524424883595!3d-7.15063827014971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc346b56ee0cd%3A0x2cf4c299843db5a8!2sDeu%20Em%20Pizza%20%26%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1701481452889!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+}
+header{
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+}
+main{
+    margin-top: 70px;
+}
+.flex{
+    display: flex;
+}
+nav{
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+    background-color: #000;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    padding: 2vw;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8vh;
+}
+#button{
+    background-color: #f8ce35;
+    border-radius: 5px;
+    margin-left: 10%;
+    padding: 1.5%;
+    margin-top: 0.5%;
+}
+main{
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.8vh;
+    text-align: center;
+    color: #fff;
+}
+
+section#cadastro p{
+    width: 90vw;
+    margin-left: 6vw;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+section#cadastro a{
+    color: #f8ce35;
+    text-decoration: none;
+}
+section#cadastro p span a{
+    color: #f8ce35;
+    text-decoration: underline;
+}
+input#confirmar{
+    background-color: #f8ce35;
+    color: #fff;
+    border: 1px solid #dbdada;
+    border-radius: 2px;
+    margin-left: 6vw;
+}
+input#confirm-button{
+    background-color: #f5c416;
+    color: #fff;
+    margin-left: 6vw;
+    text-transform: uppercase;
+}
+footer{
+    margin-top: 3vh;
+    background: #2c2b2b;
+    flex-direction: column;
+}
+footer section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#redes.flex{
+    width: 42%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer section h5{
+    color: #fff;
+    margin: 2vh;
+}
+section#incorp{
+    justify-content: center;
+}
+div#login-face{
+    background-color: #3b5998;
+    padding: 2vh;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#login-google{
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+div#login-apple{
+    background-color: #000;
+    padding: 2vh;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+p a#back{
+    justify-content: end;
+    padding: 10px;
+    background: #f8ce35;
+    color: #fff;
+}
+
+@media only screen and (max-width: 700px){
+    div#login-face{
+        width: 80vw;
+    }
+    div#login-google{
+        width: 80vw;
+    }
+    div#login-apple{
+        width: 80vw;
+    }
+    section#cadastro{
+        width: 90vw;
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2c2b2b;
+        height: 90vh;
+        margin-top: -10vh;
+    }
+    section#cadastro input{
+        width: 80vw;
+        margin-top: 1vh;
+    } 
+    section#cadastro h1{
+        margin: 1.8vh;
+    }
+}
+@media only screen and (min-width: 701px){
+    div#login-face{
+        width: 50vw;
+    }
+    div#login-google{
+        width: 50vw;
+    }
+    div#login-apple{
+        width: 50vw;
+    }
+    section#cadastro{
+        width: 90vw;
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2c2b2b;
+        height: 90vh;
+    }
+    section#cadastro input{
+        width: 70vw;
+        margin-top: 1vh;
+    }
+    section#cadastro p{
+        width: 70vw;
+    } 
+    section#cadastro h1{
+        margin: 1.8vh;
+    }
+    
+}
