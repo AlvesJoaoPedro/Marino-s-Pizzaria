@@ -200,6 +200,7 @@ section#pizzas a:hover{
     transform: scale(1.1);
     text-decoration: none;
     margin-bottom: 6%;
+    transition: transform 1s;
 }
 a.pizza.flex div.flex span.price p{
     margin-top: 2vw;
